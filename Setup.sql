@@ -1,0 +1,25 @@
+-- CREATE TABLE accounts (
+--    id VARCHAR(255) NOT NULL,
+--    name VARCHAR(255) NOT NULL,
+--    email VARCHAR(255) NOT NULL,
+--    picture VARCHAR(255) NOT NULL,
+--    PRIMARY KEY (id)
+-- );
+
+-- CREATE TABLE recipe (
+--    id INT NOT NULL AUTO_INCREMENT,
+--    creatorId VARCHAR(255) NOT NULL,
+--    name VARCHAR(255) NOT NULL,
+--    description VARCHAR(255) NOT NULL,
+--    PRIMARY KEY (id),
+--    FOREIGN KEY (creatorId) REFERENCES accounts(id) ON DELETE CASCADE
+-- );
+
+-- CREATE TABLE ingredient (
+--    id INT NOT NULL AUTO_INCREMENT,
+--    recipeId INT(255) NOT NULL,
+--    name VARCHAR(255) NOT NULL,
+--    measuredIn VARCHAR(255) NOT NULL,
+--    PRIMARY KEY (id),
+--    FOREIGN KEY (recipeId) REFERENCES recipe(id) ON DELETE CASCADE
+-- );
